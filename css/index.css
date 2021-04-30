@@ -11,7 +11,7 @@ body {
     color: #9ba6b2;
 }
 html {
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
 }
 em {
@@ -159,7 +159,7 @@ h1, h2, h3 {
 
 .intro {
     text-align: center;
-    margin: auto;
+    margin-right: 10%;
     height: 100vh;
     padding-left: 10%;
     padding-right: 10%;
@@ -178,6 +178,9 @@ h1, h2, h3 {
     font-size: 2.25rem;
     font-family: 'Noto Serif', serif;
 }
+.intro strong {
+    color: #717171;
+}
 
 
 
@@ -195,8 +198,8 @@ h1, h2, h3 {
     flex-direction: column;
     justify-content: space-evenly;
 }
-.design h2 {
-    font-size: 2.5rem;
+.design h1 {
+    font-size: 2.75rem;
     padding: 5rem;
 }
 .design p {
@@ -214,6 +217,7 @@ h1, h2, h3 {
 }
 .work1 h1 {
     padding: 2%;
+    font-size: 2.75rem;
 }
 .work2 {
     border-bottom: 2px dashed #bbd3df;
@@ -231,12 +235,9 @@ h1, h2, h3 {
     border-top: 2px solid #262626;
     border-right: 2px solid #262626;
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-right: 2%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 .zeroProof2 {
     background-color: #f8f9fb;
@@ -255,6 +256,7 @@ h1, h2, h3 {
 
 #collage {
     max-width: 100%;
+    object-fit: contain;
 }
 
 /* ----------- slideshow -------------- */
@@ -362,6 +364,9 @@ h1, h2, h3 {
     border-bottom: 2px dashed #bbd3df;
     padding: 5%;
 }
+.about h1 {
+    font-size: 2.75rem;
+}
 .aboutMe {
     height: 90%;
     display: flex;
@@ -370,6 +375,10 @@ h1, h2, h3 {
 }
 .aboutMe h2 {
     padding: 1%;
+    font-size: 2rem;
+}
+.aboutMe span {
+    font-size: 1.5rem;
 }
 .aboutMe em {
     text-decoration: none;
@@ -377,11 +386,17 @@ h1, h2, h3 {
 .aboutMe i {
     color: #262626;
 }
+.tools h3 {
+    font-size: 1.25rem;
+}
 .languages {
     margin-top: 2%;
     display: flex;
     justify-content: space-evenly;
     color: #262626;
+    font-size: 1.25rem;
+}
+.languages span {
     font-size: 1.5rem;
 }
 
@@ -464,8 +479,8 @@ h1, h2, h3 {
         padding-top: 5%;
         padding-bottom: 20%;
     }
-    .design h2 {
-        font-size: 5rem;
+    .design h1 {
+        font-size: 4.5rem;
     }
     .design p {
         font-size: 3rem;
@@ -480,6 +495,11 @@ h1, h2, h3 {
     }
     .work1 h1 {
         font-size: 5rem;
+    }
+    .zeroProof1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     .zeroProof2 {
         padding: 20px;
