@@ -1,0 +1,194 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>PeterBDev</title>
+  <meta name="description" content="This Is Peter Bachman">
+  <meta name="author" content="Peter Bachman">
+
+  <!-- Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+
+  <!-- fontAwesome icons-->
+  <script src="https://kit.fontawesome.com/06c45a087f.js" crossorigin="anonymous"></script>
+
+  <!-- logo favicon -->
+  <link rel="shortcut icon" type="image/jpg" href="resources/pbLogo.ico"/>
+
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+<!--      Contact Button      -->
+<section class="contactCard">
+  <img src="resources/pbLogoImage.png" alt="PBLogo">
+  <br>
+  <button id="contactBtn">Contact Me</button> 
+</section>
+
+<!--------------------------------->
+
+<!--     Contact Modal     -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span  id="contactClose" class="close">&times;</span>
+        <img class="logo" src="resources/pbLogoImage.png" alt="PBLogo">
+        <div class="modalInfo">
+            <h2>Peter Bachman</h2>
+            <p>Front End Developer</p>
+            <div class="info">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+1-425-457-2027">+1 (425) 457-2027</a>
+                <br>
+                <i class="far fa-envelope"></i>
+                <a href="mailto:peterbachman100@gmail.com?subject=Let's%20Talk%20about%20front%20end%20development&body=Hi%20Peter!%0AI%20would%20like%20to%20talk%20about%3A">peterbachman100@gmail.com <i class="fas fa-external-link-alt"></i></a>
+                <br>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/peter-bachman-835487183/" target="_blank">LinkedIn</a>        
+            </div>
+        </div>
+      </div>
+</div>
+
+<!---------------------------------->
+<!-- Sidebar Nav -->
+<nav class="sectionNav">
+    <ul>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<!---------------------------------->
+
+<div class="background"></div>
+
+<!-- Intro Section-->
+<section class="intro" id="intro">
+    <h1>Hello and Welcome!</h1>
+    <span>I'm Peter Bachman, I do front-end web development.</span>
+    <h2>I like <a href="#design"><em>Design that moves <i class="fas fa-arrow-down"></i></em></a></h2>
+</section>
+<!----------------------------------->
+
+
+<!---- Design -->
+<section class="design" id="design">
+    <h2>Purposeful | Intuitive | Dynamic</h2>
+    <p>I like creating websites that are built from the ground-up aiming toward specific goals.</p>
+    <p>Purposeful, dynamic, and intuitive design helps create engaging experiences that drive website-users to take action.</p>
+    <p>Simply put, <em>Design That Moves</em> gets people moving.</p>
+    <a href="#work">My Work <i class="fas fa-arrow-down"></i></a>    
+</section>
+<!------------------------------------------------------------>
+
+<!---- Work ---->
+<section class="work1" id="work">
+    <h1>Past Work</h1>
+    <div class="zeroProof1">
+        <img id="collage" src="resources/ZeroProofScreenShotTitle.png" alt="Device Screen-shots">    
+    </div>
+</section>
+<section class="work2">
+    <div class="zeroProof2">
+        <div>
+            <h2>What</h2>
+            <p><a target="_blank" href="https://peterbachman100.github.io/Zero-Proof/index.html">Zero Proof <i class="fas fa-external-link-alt"></i></a> is a recipe site for non-alcoholic mixed drinks, otherwise known as virgin cocktails or mocktails.</p>    
+        </div>
+        <div>
+            <h2>Design</h2>
+            <p>In response to recipes hosted on text-filled blogs and protracted listicles, <a target="_blank" href="https://peterbachman100.github.io/Zero-Proof/index.html">Zero Proof <i class="fas fa-external-link-alt"></i></a> has been designed
+                to be easy to use with minimal clutter. This way, people can spend less time reading, and more time enjoying their drink.</p>    
+        </div>
+        <div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext" id="firstSlide">1 / 4</div>
+                    <img src="resources/laptopRecipes2.png" class="slideImg">
+                    <div class="text">A grid layout makes it easy to browse through recipes and quickly find something interesting.</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="resources/ipadRecipe.png" class="slideImg">
+                    <div class="text">The individual recipe pages are uncluttered and get right to the recipe.</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="resources/iphoneLemonade1.png" class="slideImg">
+                    <div class="text">Responsive layouts are designed with mobile use in mind.</div>
+                  </div>
+    
+                  <div class="mySlides fade">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="resources/iphoneLemonade2.png" class="slideImg">
+                    <div class="text">All the info you need is visible at once; it's more fun to mix drinks when you don't have to switch between pouring and scrolling.</div>
+                  </div>
+    
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+    
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>            
+        </div>
+            
+</section>
+<!------------------------------------------------------------------------->
+
+<!----- About Me ---------->
+<section class="about" id="about">
+    <h1>About Me</h1>
+    <div class="aboutMe">
+        <h2>I'm a front end developer in Issaquah, WA. I like building websites that help people <em>move from intent into action.</em></h2>
+        <div>
+            <h2>You'll often find me:</h2>
+            <span><i class="fas fa-mountain"></i> in the Cascade mountains</span><br>
+            <span><i class="fas fa-hamburger"></i> cooking and eating delicious food</span><br>
+            <span><i class="fas fa-user-friends"></i> spending time with friends and family</span>
+        </div>
+        <div class="tools">
+            <h3>I enjoy learning new tools, but I most often choose to develop from the ground up with:</h3>
+            <div class="languages">
+                <span>HTML <i class="fas fa-file-code"></i></span>
+                <span>CSS <i class="fab fa-css3-alt"></i></span>
+                <span>JavaScript <i class="fab fa-js-square"></i></span>    
+            </div>    
+        </div>    
+    </div>
+</section>
+<!------------------------------------------>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <div>
+        <img src="resources/pbLogoImage.png" alt="PBLogo">
+        <h2>Peter Bachman</h2>
+        <span>Front End Developer</span>    
+    </div>
+    <div class="contactInfo">
+        <p><i class="fas fa-phone"></i><a href="tel:+1-425-457-2027">+1 (425) 457-2027</a></p>
+        <p><i class="far fa-envelope"></i><a href="mailto:peterbachman100@gmail.com?subject=Let's%20Talk%20about%20front%20end%20development&body=Hi%20Peter!%0AI%20would%20like%20to%20talk%20about%3A">peterbachman100@gmail.com <i class="fas fa-external-link-alt"></i></a></p>
+        <p><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/peter-bachman-835487183/" target="_blank">LinkedIn</a></p>
+    </div>
+
+</section>
+<!---------------------------------------->
+  <script src="js/index.js"></script>
+</body>
+</html>
