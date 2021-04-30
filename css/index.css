@@ -11,7 +11,7 @@ body {
     color: #9ba6b2;
 }
 html {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
 }
 em {
@@ -237,7 +237,10 @@ h1, h2, h3 {
     margin-left: 2%;
     margin-top: 1%;
     margin-right: 2%;
-    height: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .zeroProof2 {
     background-color: #f8f9fb;
@@ -251,12 +254,17 @@ h1, h2, h3 {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 
 #collage {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1400px;
+    max-height: 90%;
+    height: auto;
     object-fit: contain;
+    margin: auto;
 }
 
 /* ----------- slideshow -------------- */
@@ -273,6 +281,7 @@ h1, h2, h3 {
   }
 
   .slideImg {
+      max-height: 50vh;
       max-width: 100%;
   }
   
@@ -422,7 +431,7 @@ h1, h2, h3 {
     width: 30%;
 }
 
-/* --------------------- MOBILE --------------------- */
+/* --------------------- MOBILE -------------------------------------------------------------------------------------- */
 @media only screen and (max-device-width: 600px) {
     /* Contact Button */
     .contactCard {
